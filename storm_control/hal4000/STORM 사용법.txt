@@ -1,0 +1,38 @@
+###################################
+### STORM 메뉴얼 (by IOAH 2021.03.23.) ###
+###################################
+
+hap4000 주소 : C:\storm-control-master\storm_control\hal4000
+Python36 주소 : C:\Users\admin\.conda\envs\py36
+
+Andor Driver Pack SDK 사용 중
+- STORM xml에 보면 dll 바꾸는 것 있음. 
+    (현재 Andor SDK/ atmcd64d,dll)
+- andorCameraControl에 보면 dll 바꾸는 거 있음(Test용)
+
+PreAmpGain mode 
+- xml에서 설정 바꿔주는 것 (mode & gain 초기값)
+- andorcontroller py -> 888 :getpreampgain-1
+- 897: 그대로
+
+프로그램 아이콘 및 로딩 화면
+- qtCameraGraphicsView
+- 아이콘 ->qtWidget
+- 로딩 화면 -> hal4000
+
+폴더 변경
+- 폴더 변경 시, conda/env/py36/lib/site-packages/storm-control.pth 파일에서 이름 바꿔야 함.
+
+Display 설정 (Inside Program)
+- STORM xml 파일에서 flip_h, flip_v, transpose 설정
+- # qtCameraGraphicsScene에서 162줄 - 현재 TTF
+- c_image_manipulation 에서 rescaleImage
+- xml : STORM.xml에서 보고 설정
+
+Saving 설정
+- imagewriters에 dax 부분만 수정해놓음(2021.03.22.)
+- 좌우 대칭 한 번 + clockwise 90도 회전
+
+###################################
+###################################
+###################################
