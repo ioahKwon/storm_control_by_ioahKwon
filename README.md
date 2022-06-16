@@ -4,6 +4,8 @@ This is the final version used in Kimlab (https://kimlab.info)
 
 **This codes are only available in Python 3!**
 
+<img src="https://user-images.githubusercontent.com/70814964/174025056-5896524e-ca72-492f-ad81-a80e258328f5.png" width="300" height="300"/>
+
 Settings : Python 3.6 (64bit)
 
 Special thanks to @[Zhuang Lab](http://zhuang.harvard.edu) for the original code.
